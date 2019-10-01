@@ -1,0 +1,98 @@
+// o que foi feito e não comentado na (parte na unity)
+
+/*Fazendo com que a bola choque com outros objetos e não passe direto  - fazendo com que objetos nao ultrapasse a barra*/
+Adicionei um rigdbody na bola para que a mesma adquirisse gravidade e pudesse cair
+Na bola adicionei o "material" o qual chamei de bola  - este coloca atrito e tbm faz com que ele quique, bastando alterar as devidas 
+variaveis dentro do unity.. este material é adicionado ao rigidbody da bola, fazendo com que a mesma adiquira tais propriedades;
+
+Adicionei um colisor na bola para que possa atingir outros objetos
+
+Adicionei um colisor tambem na barra
+
+
+/*CRIAÇÃO DO SCRIPT CHAMADO "BOLA": */
+DEPOIS DE FAZER O SCRIPT CHAMADO "BOLA" ESTE FOI ADCIONADO AO OBJETO BOLA (NO INSECTOR), TK SCRIPT TEM VARIAVEIS, AS QUAIS
+FICAM DISPONIVEIS PARA SEREM ALTERADAS DENTRO DA UNITY.. ARRASTEI O RIGIDBODY2D PARA DENTRO DA VARIAVEL (QUE FOI CRIADA NO SCRIPT),
+CHAMADA VARRIGIDBODY2D.
+PARA A VARIAVEL "DIRECAOVERTICAL" ADICIONEI 10 E NA "DIRECAOHORIZONTAL" VALOR 1, PARA FAZER COM QUE ELA PULE COM MAIS VELOCIDADE, 
+E NAO SUBA TÃO RETO
+
+
+PARA QUE A BOLA SO COMECE A QUICAR QUANDO "ENTER" FOR PRESSIONADO (START),O QUE FIZ: EDIT->PROJECT SETTINGS -> FISICS2D ->GRAVITY Y=0
+
+
+/* IMPEDINDO QUE A BOLA SAIA DA TELA */
+CREI 3 GAME OBJCTS, AOS QUAIS ADICIONEI PARA CADA 1 BOX COLLIDER 2D, SENDO CADA GAME OBJECT: PAREDE ESQUERDA,
+PAREDE DIREITA, E TETO, OS QUAIS ESTÃO MINUNCIOSAMENTE DO TAMANHO DA TELA, SOMENTE TETO SENDO MAIOR QUE A MESMA PARA GARANTIR QUE 
+BOLA NUNCA SAIA DA TELA;
+
+As duas paredes e teto então em hierarquia do gameobject "Limitadores"
+
+/*	 Criacação dos blocos */
+Coloquei um bloco de cada cor, e a cada bloco, adicionei um colisor, para que o mesmo tenha colisão com a bola,
+Adicionando lado a lado, utilizei todas as cores disponiveis, o que são 6 cores
+
+Adicionei cada bloco a pasta prefabs, para que possa fazer o reaproveitamento dos mesmos
+
+/*criando fase*/
+em cenas renomeiei para fase 1, e criei o script para os blocos ..
+Terminado a programacao desse script, adcionei o mesmo a todos os blocos e em inspector cliqeui em override e aplly all para que seje salvo
+no prefabs
+
+/*Adicionando audio na bola (som colisao)*/
+Bola -> inspector -> addComponent -> Audio Source
+- programacao no script "Bola"
+Arrastar o "hit da bola" para o componente "audio clip"
+- desmarcar opção "Play On Awake" para que nao toque quando for der play no jogo
+
+/* Adicionando som aos blocos */
+Espalnar/instanciar som: transformar som em prefabs
+-> arrastar som do bloco para hierarquia, e de hierarquia para prefabs e deletalo de hierarquia.
+-- programacao no script "Tijolo"
+Depois arrastar o som criado como prefab para a variavel SomDoBloco (criada no scrpt) para todos os blocos
+
+
+
+/*Reiniciando a fase quando bola cair*/
+Um Trigger (colider) fara verificação se bolinha saiu pelo limite inferior da tela, o diferencial de Trigger é que
+quando os objetos se "encostam" ambos não terão atritos, somente atravessam corpos.. servindo apenas pra saber se passou ou nao
+Criando o gameobject: hierarquia -> create empty -> seleciona o gameobject -> reset transforms -> renomiei para "GameOver"
+transformando gameobject em um trigger: addComponent -> boxCollider2d => arrastar gameObject para baixo da fase (fora da camera)
+Redimensionar para que fique do um pouco maior que a parte inferior da tela
+Marcar o box: IsTrigger
+- programação script: "GameOver"
+Arraste o script para o GameObject
+
+/*PASSAR DE FASE QUANDO TODOS BOLOCOS DESTRUIDOS*/
+Script: GemeManager
+Finalizado o script, adicionei o mesmo na cena, para isso criei um gameObject, resetei seu transform e o chamei
+de GameManager e por fim arrastar o script para ele
+
+/*Mudando de fase */
+- Criacação de outra fase no unity (duplicar a atual scene)
+ scene -> escolher a cena -> edit -> duplicate
+ Modifiquei a fase 2, adicionando mais 2 tijolos
+ - programar troca de fases no script GameManager
+ Colocar cena no build: em buildsettings adcionei as cenas que irao para versao final do projeto 
+ file -> buildsettings -> aarrastar a cena para esta janela (manter as fases em ordem crescente)
+ 
+ 
+ /*"Polindo o jogo" e outros ajustes */
+ Mudando cor de fundo ao mudar fase:
+ - mudandando cor da camera clicar em camera -> clear flags -> solidcolors (para mostrar uma cor) -> 
+ background-> cor desejo
+ 
+ /*Otimizando jogo*/
+ - toda vez que um bloco é destruido é instanciado um prefab com seu som, essa instancia fica ate que outro bloco
+ é destruido.. para otimizar é aconselhavel deletalo depois de um tempo..
+ programacao - script DeletaInstanciaSomBloco
+ coloquei o script no prefab de som de destruir bloco "BlocoSom"
+
+ -- Sair do jogo com "Esc" (somente com game em modo usuario):
+ para tal, alteraçao é feita no script GameManager
+ 
+ /*Exportando  o jogo para modo usuario (build) */
+ File - > BuildSettings -> Payer -> CompayName = "Lumina Spargere" -> Product name = "Break Blocks" -> version = 1.0
+  -> defaultIcon (escolher icone) ->
+ 
+ 
