@@ -6,6 +6,8 @@ ScriptsOnlyBuild:
     - DeletaInstanciaSomBloco
     - GameManager
     - GameOver
+    - InfoFaseAtual
+    - InfoPontuacao
     - Tijolo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -15,6 +17,13 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Fase 1.unity:
     - Class: 1
@@ -48,24 +57,46 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10664}
+      Script: {instanceID: 9660}
     - Class: 114
-      Script: {instanceID: 10980}
+      Script: {instanceID: 9822}
     - Class: 114
-      Script: {instanceID: 11074}
+      Script: {instanceID: 9998}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 10262}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 10520}
     - Class: 114
-      Script: {instanceID: 11538}
+      Script: {instanceID: 10666}
+    - Class: 114
+      Script: {instanceID: 10982}
+    - Class: 114
+      Script: {instanceID: 11076}
+    - Class: 114
+      Script: {instanceID: 11108}
+    - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11480}
+    - Class: 114
+      Script: {instanceID: 11520}
+    - Class: 114
+      Script: {instanceID: 11540}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Fase 2.unity:
     - Class: 1
@@ -99,24 +130,42 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10664}
+      Script: {instanceID: 9660}
     - Class: 114
-      Script: {instanceID: 10980}
+      Script: {instanceID: 9822}
     - Class: 114
-      Script: {instanceID: 11074}
+      Script: {instanceID: 9998}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 10520}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 10666}
     - Class: 114
-      Script: {instanceID: 11538}
+      Script: {instanceID: 10982}
+    - Class: 114
+      Script: {instanceID: 11076}
+    - Class: 114
+      Script: {instanceID: 11108}
+    - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11520}
+    - Class: 114
+      Script: {instanceID: 11540}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Fase 3.unity:
     - Class: 1
@@ -150,24 +199,42 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10664}
+      Script: {instanceID: 9660}
     - Class: 114
-      Script: {instanceID: 10980}
+      Script: {instanceID: 9822}
     - Class: 114
-      Script: {instanceID: 11074}
+      Script: {instanceID: 9998}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 10520}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 10666}
     - Class: 114
-      Script: {instanceID: 11538}
+      Script: {instanceID: 10982}
+    - Class: 114
+      Script: {instanceID: 11076}
+    - Class: 114
+      Script: {instanceID: 11108}
+    - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11520}
+    - Class: 114
+      Script: {instanceID: 11540}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Fase 4.unity:
     - Class: 1
@@ -201,24 +268,42 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10664}
+      Script: {instanceID: 9660}
     - Class: 114
-      Script: {instanceID: 10980}
+      Script: {instanceID: 9822}
     - Class: 114
-      Script: {instanceID: 11074}
+      Script: {instanceID: 9998}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 10520}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 10666}
     - Class: 114
-      Script: {instanceID: 11538}
+      Script: {instanceID: 10982}
+    - Class: 114
+      Script: {instanceID: 11076}
+    - Class: 114
+      Script: {instanceID: 11108}
+    - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
+      Script: {instanceID: 11520}
+    - Class: 114
+      Script: {instanceID: 11540}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -337,6 +422,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 213d6bea2a6ad869a8b047c393e748e9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InfoPontuacao
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -431,6 +522,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: f06da03b964b9aa60cec1fe555dba01c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InfoFaseAtual
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -565,7 +662,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 0604439495b03ebe7b66f5008d57994c
+      Hash: 1c4560f037db4b05bed44c23feb54d89
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -677,4 +774,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Fase 2.unity
   - Assets/Scenes/Fase 3.unity
   - Assets/Scenes/Fase 4.unity
-  playerPath: C:/Users/raila/Documents/GitHub/BreakBlocks/Builds/Break-Blocks.exe
+  playerPath: C:/Users/raila/Documents/GitHub/BreakBlocks/Builds/Break-Blocks 2.1/Break-Blocks.exe

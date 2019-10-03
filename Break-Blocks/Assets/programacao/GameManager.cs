@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;//para manipular carregamento de cenas/fases
-
 public class GameManager : MonoBehaviour
 {
+    public int blocosDestruidos; //variavel para ser utilizada no scrip "InfoPontuacao", guardar scores
     public int numeroDeBlocos;//contador de blocos
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
             numeroDeBlocos++;
         }else if(op.Equals('-') ){
             numeroDeBlocos--;
+            blocosDestruidos++;
             //verifica se zerou blocos
             if(numeroDeBlocos <= 0){
                 //verifica se existe proxima fase em relacao a atual

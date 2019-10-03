@@ -58,41 +58,43 @@
      <Compile Include="Assets\programacao\DeletaInstanciaSomBloco.cs" />
      <Compile Include="Assets\programacao\GameManager.cs" />
      <Compile Include="Assets\programacao\GameOver.cs" />
+     <Compile Include="Assets\programacao\InfoFaseAtual.cs" />
+     <Compile Include="Assets\programacao\InfoPontuacao.cs" />
      <Compile Include="Assets\programacao\Tijolo.cs" />
      <None Include="Assets\Efeitos_Sonoros\SFX_Creditos_Jogo_do_Bloquinho.txt" />
      <None Include="Assets\Gráficos\Gráficos_Creditos_Jogo_do_Bloquinho.txt" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/Faculdade/Ciencia da Computação/8º Período/2º Etapa/Computação Gráfica/Praticas Unity/Trabalho 02/Break-Blocks/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/raila/Documents/GitHub/BreakBlocks/Break-Blocks/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -1,4 +1,4 @@
-// o que foi feito e não comentado na (parte na unity)
+// o que foi feito e não comentado(parte na unity)
 
 /*Fazendo com que a bola choque com outros objetos e não passe direto  - fazendo com que objetos nao ultrapasse a barra*/
 Adicionei um rigdbody na bola para que a mesma adquirisse gravidade e pudesse cair
