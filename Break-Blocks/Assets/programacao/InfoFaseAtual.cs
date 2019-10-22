@@ -10,7 +10,7 @@ public class InfoFaseAtual : MonoBehaviour
     void Start()
     {
 		//passa a fase atual para a variavel
-        faseAtual = SceneManager.GetActiveScene().buildIndex + 1;
+        faseAtual = SceneManager.GetActiveScene().buildIndex;
 		//passa informacao para variavel que exibira na tela
         level.text =  "Level: "+ faseAtual;
     }

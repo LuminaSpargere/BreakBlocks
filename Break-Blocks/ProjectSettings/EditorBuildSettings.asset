@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/MenuInicial.unity
+    guid: b15c7c3794d25184eb6205343b0647d0
+  - enabled: 1
     path: Assets/Scenes/Fase 1.unity
     guid: 7f0ffb2cc8b8e4b45a48028c355ae294
   - enabled: 1
@@ -20,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase 4.unity
     guid: 23e0b8c2306bfdb4b89d41ae5e575534
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: b9e4e05887d8ab44c92a27cba2272c2b
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: bffe03130d6d4964f87e0d8e64aa50fe
   m_configObjects: {}

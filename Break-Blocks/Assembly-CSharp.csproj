@@ -61,6 +61,9 @@
      <Compile Include="Assets\programacao\InfoFaseAtual.cs" />
      <Compile Include="Assets\programacao\InfoPontuacao.cs" />
      <Compile Include="Assets\programacao\Tijolo.cs" />
+     <Compile Include="Assets\programacao\UIControleGameOver.cs" />
+     <Compile Include="Assets\programacao\UIControleInicial.cs" />
+     <Compile Include="Assets\programacao\UIVoltarDoTutorial.cs" />
      <None Include="Assets\Efeitos_Sonoros\SFX_Creditos_Jogo_do_Bloquinho.txt" />
      <None Include="Assets\Gráficos\Gráficos_Creditos_Jogo_do_Bloquinho.txt" />
  <Reference Include="Unity.Timeline.Editor">

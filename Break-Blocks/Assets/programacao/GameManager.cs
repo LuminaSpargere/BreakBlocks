@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
                 }
                  // se nao houver outra fase alem da atual
                 else{
-                    SceneManager.LoadScene(0); //volta a primeira fase
+                    SceneManager.LoadScene(0); //volta ao menu
                 }
             }
         }
